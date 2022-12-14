@@ -23,11 +23,15 @@ posix
 Un ejemplo de esto es la manipulacion de argumentos que se le pasan al script ejemplo:
 
 ```
-./script.py arg1 arg2 agr3 masa
+./script.py Hello Python agr3 masa
 #out 
-['./script.py', 'arg1', 'arg2', 'agr3', 'masa']
+['./script.py', 'Hello', 'Python', 'agr3', 'masa']
 
-``
+sys.argv[0] == ‘script.py’ 
+sys.argv[1] == ‘Hello’ 
+sys.argv[2] == ‘Python
+
+```
 
 
 
