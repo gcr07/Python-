@@ -90,6 +90,17 @@ if __name__ == '__main__':
 ```
 
 
+## Python ord()
+
+> The ord() function returns an integer representing the Unicode character.
+
+```
+print(ord('@'))   
+64
+>>> print(ord('A'))                    
+65   
+
+```
 
 
 
