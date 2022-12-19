@@ -112,9 +112,46 @@ print(ord('@'))
 
 ```
 
+## Import requests
+
+Sirve para hacer peticiones tanto post como get y otras supongo en este caso aqui tienen un ejemplo de una peticion post:
+
+```
+search_url="http://10.10.11.170:8080/search"
+	post_data = {
+		'name':payload # mira como tienen comillas para evitar que interprete una variable
+	}
+	r = requests.post(search_url, data=post_data)
+```
+
+## Chrome ver peticiones 
+
+Para ver las peticiones sin que tengas que usar el burpsuite ( muy util ) pestaña network oprimes el boton genera una peticion la selecciona y te vas a request para ver que datos manda en este caso el campo name
+
+![image](https://user-images.githubusercontent.com/63270579/208353699-b009464d-5c7f-4c5c-a158-399f7a94dd75.png)
 
 
+## Opening Files in Python
 
+> Python has a built-in open() function to open a file. This function returns a file object, also called a handle, as it is used to read or modify the file accordingly.
+
+### Para archivos existentes
+
+```
+
+>>> f = open("test.txt")    # open file in current directory
+>>> f = open("C:/Python38/README.txt")  # specifying full path
+
+```
+
+#### Para crear un nuevo archivo
+
+
+```
+	f = open("output.txt", "w")
+	f.write(r.text)
+	f.close()
+```
 
 
 
