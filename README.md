@@ -9,6 +9,11 @@ os.name
 #output 
 posix
 ```
+### Ejemplo desde dentro del script
+
+```
+os.system("cat output.txt | awk '/searched/,/<\/h2>/' | sed 's/ <h2 class="searched">You searched for: //' | sed 's/ <\/h2>//'"
+```
 
 ## Import requests
 
