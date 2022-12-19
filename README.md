@@ -156,4 +156,54 @@ Para ver las peticiones sin que tengas que usar el burpsuite ( muy util ) pestaÃ
 
 
 
+> https://www.programiz.com/python-programming/file-operation
+
+## AWK Rango
+
+Tenemos que filtrar el output del programa el comando id el cual es el siguiente:
+
+```
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Red Panda Search | Made with Spring Boot</title>
+    <link rel="stylesheet" href="css/search.css">
+  </head>
+  <body>
+    <form action="/search" method="POST">
+    <div class="wrap">
+      <div class="search">
+        <input type="text" name="name" placeholder="Search for a red panda">
+        <button type="submit" class="searchButton">
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </div>
+  </form>
+    <div class="wrapper">
+  <div class="results">
+    <h2 class="searched">You searched for: uid=1000(woodenk) gid=1001(logs) groups=1001(logs),1000(woodenk)
+</h2>
+      <h2>There are 0 results for your search</h2>
+       
+    </div>
+    </div>
+    
+  </body>
+</html>
+
+```
+
+Se usa un rango con awk '/desde/,/hasta nota como escapaste la diagolal de la tag h2 para que no entrara en conflicto/':
+
+```
+cat output.txt | awk '/searched/,/<\/h2>/'
+
+```
+Se usa sed para borrar o "sustituir" sed 's/lo que quieres sustuir/por lo que se va a sustituir/'
+
+```
+cat output.txt | awk '/searched/,/<\/h2>/' | sed 's/ <h2 class="searched">You searched for: //'
+```
 
