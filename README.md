@@ -204,6 +204,6 @@ cat output.txt | awk '/searched/,/<\/h2>/'
 Se usa sed para borrar o "sustituir" sed 's/lo que quieres sustuir/por lo que se va a sustituir/'
 
 ```
-cat output.txt | awk '/searched/,/<\/h2>/' | sed 's/ <h2 class="searched">You searched for: //'
+cat output.txt | awk '/searched/,/<\/h2>/' | sed 's/ <h2 class="searched">You searched for: //' | sed 's/ <\/h2>//'
 ```
 
