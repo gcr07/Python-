@@ -1,3 +1,28 @@
+## Uso de la consola de pyhton
+
+Si necesitas ayuda sobre una clase por ejemplo la de ""dnspython" lo que se puede hacer es lo sigiuente
+
+```
+python3 
+import dns.zone as dz
+para ver que metodos se puedne utilizar 
+help(dz. Tab # auto completa todo y te muestra que podemos utilizar 
+
+```
+![image](https://user-images.githubusercontent.com/63270579/209983814-f4cf67bc-7811-49d7-a94c-9b74f9381c27.png)
+
+## Pensamiento para tratar con funciones desconocidas
+
+Por ejemplo tenemos esto:
+
+```
+from_xfr(xfr, zone_factory=<class 'dns.zone.Zone'>, relativize=True, check_origin=True)
+```
+Si te das cuenta hay valores con igual esos son por defecto pero el primero al parecer ese si es afuerzas entonces tendrias que ver que es
+
+![image](https://user-images.githubusercontent.com/63270579/209988709-e18ae2c4-1bcf-4258-82b3-74ae2adaa52e.png)
+
+
 # Script explicado RedPanda 
 
 ## Import os
