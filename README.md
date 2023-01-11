@@ -305,3 +305,11 @@ if __name__ == '__main__':
 	makeRequest(payload)
 	
 ```	
+
+## Importaciones
+
+
+Revisa esta pagina es el mejor recurso para entender que es un modulo.
+
+
+> https://www.datacamp.com/tutorial/modules-in-python#rdl
